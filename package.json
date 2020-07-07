@@ -24,8 +24,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "spa-build-core": "file:../spa-build-core",
-    "spa-code-generate": "file:../spa-code-generate",
     "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "spa-build-core": "github:normalize-project/spa-build-core",
+    "spa-code-generate": "github:normalize-project/spa-code-generate"
   }
 }
