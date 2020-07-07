@@ -1,14 +1,17 @@
 {
-  "name": "sample-react-template",
+  "name": "dva-spa-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于dva.js的react单页应用",
   "main": "index.js",
   "scripts": {
     "dev": "build-spa dev",
     "build": "build-spa build",
     "watch": "spa-generate"
   },
-  "keywords": [],
+  "keywords": [
+    "spa",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
