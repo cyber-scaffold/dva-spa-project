@@ -1,0 +1,28 @@
+{
+  "name": "sample-react-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "build-spa dev",
+    "build": "build-spa build",
+    "watch": "spa-generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.4.0",
+    "axios": "^0.19.2",
+    "dot-prop": "^5.2.0",
+    "dva": "^2.6.0-beta.20",
+    "loadsh": "0.0.4",
+    "moment": "^2.26.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "spa-build-core": "file:../spa-build-core",
+    "spa-code-generate": "file:../spa-code-generate",
+    "uuid": "^8.2.0"
+  }
+}
