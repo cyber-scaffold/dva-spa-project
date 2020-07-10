@@ -1,22 +1,30 @@
 
 
 import "@/globals/index.less";
-import dva from "dva";
+
 import React from "react";
+import dva, { router } from "dva";
 
 import BasicLayout from "@/layouts/BasicLayout";
 import HomePage from "@/pages/HomePage";
-import TestPage from "@/pages/TestPage";
 
-const app = dva();
+const { Router, Route } = router;
+
+const app = dva({
+	onError: (error) => (error)
+});
+
 app.model({
 	namespace: "TestPage",
 	state: { a: 1 }
 });
-app.router(() => (
-	<BasicLayout>
-		<HomePage />
-		<TestPage />
-	</BasicLayout>
+
+app.router(({ history }) => (
+	<Router history={history}>
+		<BasicLayout>
+			<Route path="/" component={HomePage} />
+		</BasicLayout>
+	</Router>
 ));
+
 app.start("#root");

@@ -19,6 +19,7 @@
     "axios": "^0.19.2",
     "dot-prop": "^5.2.0",
     "dva": "^2.6.0-beta.20",
+    "history": "^5.0.0",
     "loadsh": "0.0.4",
     "moment": "^2.26.0",
     "react": "^16.13.1",
@@ -27,6 +28,8 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-plugin-react": "^7.20.3",
     "spa-build-core": "github:normalize-spa-project/spa-build-core",
     "spa-code-generate": "github:normalize-spa-project/spa-code-generate"
   }
