@@ -1,5 +1,5 @@
 {
-  "name": "dva-spa-template",
+  "name": "dva-spa-project",
   "version": "1.0.0",
   "description": "基于dva.js的react单页应用",
   "main": "index.js",
