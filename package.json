@@ -30,6 +30,6 @@
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-plugin-react": "^7.20.3",
-    "spa-build-core": "file:../spa-cli"
+    "spa-cli": "file:../spa-cli"
   }
 }
