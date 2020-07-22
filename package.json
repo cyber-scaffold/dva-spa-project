@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "spa dev",
-    "build": "spa build"
+    "build": "spa build",
+    "server": "history-server -a dist -p 8090"
   },
   "keywords": [
     "spa",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-plugin-react": "^7.20.3",
+    "history-server": "^1.3.1",
     "spa-cli": "file:../spa-cli"
   }
 }

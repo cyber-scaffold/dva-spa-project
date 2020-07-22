@@ -3,14 +3,18 @@
 import "@/globals/index.less";
 
 import React from "react";
+import {createBrowserHistory} from "history";
 import dva, { router } from "dva";
 
 import BasicLayout from "@/layouts/BasicLayout";
 import HomePage from "@/pages/HomePage";
+import TestPage from "@/pages/TestPage";
 
-const { Router, Route } = router;
+const { BrowserRouter, Route } = router;
+
 
 const app = dva({
+	history:createBrowserHistory(),
 	onError: (error) => (error)
 });
 
@@ -20,11 +24,12 @@ app.model({
 });
 
 app.router(({ history }) => (
-	<Router history={history}>
+	<BrowserRouter history={history}>
 		<BasicLayout>
 			<Route path="/" component={HomePage} />
+			<Route path="/test" component={TestPage}/>
 		</BasicLayout>
-	</Router>
+	</BrowserRouter>
 ));
 
 app.start("#root");
