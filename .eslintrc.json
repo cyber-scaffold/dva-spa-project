@@ -1,23 +1,19 @@
-/* eslint-disable*/
-module.exports = {
+{
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es2020": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": "plugin:react/recommended",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 11,
+        "ecmaVersion": 10,
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
-    "rules": {
-    }
-};
+    "rules": {}
+}
