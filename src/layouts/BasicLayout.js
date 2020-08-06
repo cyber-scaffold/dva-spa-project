@@ -1,21 +1,18 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import { elementType } from "prop-types";
 
-class BasicLayout extends React.Component {
 
-  static propTypes = {
-    children: elementType.isRequired()
-  }
+class BasicLayout extends React.Component{
 
-  constructor (props) {
+  constructor(props){
     super(props);
-    this.state = {};
-  }
+    this.state={};
+  };
 
   render() {
     const { children } = this.props;
     return children;
-  }
+  };
 
 };
 
