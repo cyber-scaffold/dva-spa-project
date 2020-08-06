@@ -1,7 +1,7 @@
 import React, { ReactChildren } from "react";
-import { StaticContext } from "react-router";
+import { RouteComponentProps } from "react-router";
 
-interface IProps extends StaticContext {
+interface IProps extends RouteComponentProps {
   children: ReactChildren
 };
 
