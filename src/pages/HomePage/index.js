@@ -1,15 +1,22 @@
 import React, { useEffect } from "react";
-import { useHistory,useSelector } from "dva";
+
+import css from "./index.less";
+import images from "./images/8f17419a90.jpg";
+
 
 export default function HomePage() {
-  const store=useSelector(({TestPage})=>(TestPage));
-  console.log(store);
-  const history = useHistory();
-  useEffect(() => {
-    console.log(history);
-  }, []);
+  useEffect(()=>{
+    (async ()=>{
+      const response=await fetch("http://127.0.0.1:8000/test2");
+      const json=await response.json();
+      console.log(json);
+    })();
+  });
   return (
-    <div>Hello Words</div>)
+    <div>
+      <img src={images}/>
+      <div className={css["home-page"]}>Hello Words</div>
+    </div>)
 };
 
 HomePage.defaultProps = {
