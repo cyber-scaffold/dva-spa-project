@@ -1,5 +1,5 @@
 import dva from "dva";
-import "@/globals/index.less";
+import "@/globals/app.less";
 
 export const app = dva({
 	onError: (error) => (error)
