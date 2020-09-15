@@ -1,33 +1,19 @@
-import "@/globals/index.less";
 
 import React from "react";
-import {createBrowserHistory} from "history";
-import dva, { router } from "dva";
+import {HashRouter,Route} from "react-router-dom";
 
+import {startApplication} from "@/globals/app";
 import BasicLayout from "@/layouts/BasicLayout";
 import HomePage from "@/pages/HomePage";
 import TestPage from "@/pages/TestPage";
 
-const { BrowserRouter, Route } = router;
 
-
-const app = dva({
-	history:createBrowserHistory(),
-	onError: (error) => (error)
-});
-
-app.model({
-	namespace: "TestPage",
-	state: { a: 1 }
-});
-
-app.router(({ history }) => (
-	<BrowserRouter history={history}>
+startApplication(()=>(
+	<HashRouter>
 		<BasicLayout>
-			<Route path="/" component={HomePage} />
-			<Route path="/test" component={TestPage}/>
+			<Route path="/" component={HomePage}/>
+			<Route path="test" component={TestPage}/>
 		</BasicLayout>
-	</BrowserRouter>
+	</HashRouter>
 ));
 
-app.start("#root");
