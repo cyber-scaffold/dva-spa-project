@@ -16,7 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antd": "^4.4.0",
+    "antd": "^4.6.4",
+    "antd-mobile": "^2.3.3",
     "axios": "^0.19.2",
     "dot-prop": "^5.2.0",
     "dva": "^2.6.0-beta.20",

@@ -12,7 +12,7 @@ startApplication(()=>(
 	<HashRouter>
 		<BasicLayout>
 			<Route path="/" component={HomePage}/>
-			<Route path="test" component={TestPage}/>
+			<Route path="/test" component={TestPage}/>
 		</BasicLayout>
 	</HashRouter>
 ));
