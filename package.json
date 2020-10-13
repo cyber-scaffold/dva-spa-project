@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "dva-spa-project",
   "version": "1.0.0",
   "description": "基于dva.js的react单页应用",
@@ -31,7 +32,7 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
-    "@cyber-tools/spa-cli": "file:../../cyber-tools/spa-cli",
+    "@cyber-tools/spa-build-tools": "file:../../cyber-tools/spa-build-tools",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.4.0",
     "eslint-plugin-react": "^7.20.5",
