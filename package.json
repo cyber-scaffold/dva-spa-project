@@ -32,7 +32,7 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
-    "@cyber-tools/spa-build-tools": "file:../../cyber-tools/spa-build-tools",
+    "@cyber-tools/spa-build-tools": "file:../../cyber-tools/packages/build-tools/spa-build-tools",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.4.0",
     "eslint-plugin-react": "^7.20.5",
